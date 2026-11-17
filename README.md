@@ -22,6 +22,7 @@
 ## Часть 2 — тюнинг Debian
 
 - [x] Wi-Fi и сеть: [02-debian-tuning/network/README.md](02-debian-tuning/network/README.md)
+- [ ] Быстрые зеркала apt: [02-debian-tuning/apt/README.md](02-debian-tuning/apt/README.md)
 - [x] KDE Plasma: [02-debian-tuning/README.md](02-debian-tuning/README.md#графика)
 - [x] Swap-файл 8 ГиБ и `vm.swappiness=10`: [02-debian-tuning/swap/README.md](02-debian-tuning/swap/README.md)
 - [ ] Windows в меню GRUB: [02-debian-tuning/windows-grub.md](02-debian-tuning/windows-grub.md)
@@ -45,6 +46,7 @@
   acpi/              DSDT и патчи
   usb/               шпаргалка установщика и fix-acpi.sh
 02-debian-tuning/    шаги из уже установленной Debian
+  apt/               быстрые зеркала пакетов
   swap/              swap-файл
   network/           Wi-Fi, USB-тетеринг, офлайн-пакеты
   diagnostics/       сбор логов

@@ -9,6 +9,7 @@
 ## Чеклист
 
 - [x] Сеть и Wi-Fi — [network/README.md](network/README.md)
+- [ ] Быстрые зеркала apt — [apt/README.md](apt/README.md)
 - [x] Графика KDE — команды ниже
 - [x] Swap-файл и `vm.swappiness` — [swap/README.md](swap/README.md)
 - [ ] Windows в меню GRUB — [windows-grub.md](windows-grub.md)

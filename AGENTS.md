@@ -1,6 +1,6 @@
 # AGENTS.md
 
-This repo is a hardware runbook, not an application: Markdown docs, two DSDT dumps, and four
+This repo is a hardware runbook, not an application: Markdown docs, two DSDT dumps, and five
 POSIX shell scripts for a Debian 13 + Windows 11 dual boot on an HONOR FMB-P (MagicBook Pro 14
 2025). There is no build, test suite, linter, CI, or codegen.
 
