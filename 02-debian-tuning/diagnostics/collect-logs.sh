@@ -8,7 +8,7 @@
 
 HERE=$(cd "$(dirname "$0")" 2>/dev/null && pwd)
 STAMP=$(date +%Y%m%d-%H%M%S)
-OUT="$HERE/debian-logs-$STAMP"
+OUT="${OUT:-$HERE/debian-logs-$STAMP}"
 
 echo "== collecting diagnostics =="
 echo "script dir : $HERE"

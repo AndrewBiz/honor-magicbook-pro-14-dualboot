@@ -10,5 +10,7 @@ Thumbs.db
 desktop.ini
 *.tmp
 *~
+# Collected diagnostics
+debian-logs-*/
 # IDE
 .idea/
