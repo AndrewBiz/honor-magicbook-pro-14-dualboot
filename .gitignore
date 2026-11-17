@@ -1,0 +1,14 @@
+# Large binary images - reproducible, keep out of git
+iso/*
+!iso/.gitkeep
+
+# Machine-specific data: serials, BIOS OEM key, BCD, logs, old docs
+private/
+
+# OS junk
+Thumbs.db
+desktop.ini
+*.tmp
+*~
+# IDE
+.idea/
