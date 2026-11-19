@@ -1,0 +1,7 @@
+# HONOR MagicBook Pro 14 (FMB-P): the FocalTech FTSC1000 touchscreen exposes a
+# bogus second HID collection - "FTSC1000:00 2808:5662 UNKNOWN", see
+# /sys/class/input/input*/modalias (...kF8 = KEY_MICMUTE). It floods KEY_MICMUTE
+# (~30 events/s) while the panel is touched, so KDE shows the microphone OSD
+# blinking as if mute is toggled in a loop, and Fn+F7 looks dead.
+# Inhibiting that collection leaves the real multitouch device in use.
+ACTION=="add|change", SUBSYSTEM=="input", KERNEL=="input*", ATTRS{name}=="FTSC1000:00 2808:5662 UNKNOWN", ATTR{inhibited}="1"

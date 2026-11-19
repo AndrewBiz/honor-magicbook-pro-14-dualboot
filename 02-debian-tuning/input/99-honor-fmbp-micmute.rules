@@ -1,0 +1,5 @@
+# HONOR MagicBook Pro 14 (FMB-P): let the logged-in session read the WMI
+# hotkey event device, so mic-mute-key.service can toggle the microphone once
+# per physical press instead of relying on KDE's global shortcut, which reacts
+# twice (mute, then unmute ~0.5 s later).
+ACTION=="add|change", SUBSYSTEM=="input", KERNEL=="event*", ATTRS{name}=="Huawei WMI hotkeys", TAG+="uaccess"

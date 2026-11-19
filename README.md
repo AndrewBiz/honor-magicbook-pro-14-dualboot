@@ -4,8 +4,9 @@
 остаётся Windows, и тюнинг уже установленной Debian. Сложные шаги вынесены в отдельные
 каталоги с документацией и скриптами.
 
-**Состояние на 2026-11-17:** Debian 13.7 установлен и загружается сам. Работают KDE, Wi-Fi
-и swap. Осталось добавить Windows в меню GRUB и продолжать тюнинг.
+**Состояние на 2026-11-19:** Debian 13.7 установлен и загружается сам. Работают KDE, Wi-Fi,
+swap и тачскрин; фантомный mute микрофона от тачскрина отключён. Осталось добавить Windows
+в меню GRUB, решить по `Fn+F7` и продолжать тюнинг.
 
 ## Часть 1 — подготовка (Windows основная)
 
@@ -25,6 +26,8 @@
 - [ ] Быстрые зеркала apt: [02-debian-tuning/apt/README.md](02-debian-tuning/apt/README.md)
 - [x] KDE Plasma: [02-debian-tuning/README.md](02-debian-tuning/README.md#графика)
 - [x] Swap-файл 8 ГиБ и `vm.swappiness=10`: [02-debian-tuning/swap/README.md](02-debian-tuning/swap/README.md)
+- [x] Фантомный mute микрофона от тачскрина: [02-debian-tuning/input/README.md](02-debian-tuning/input/README.md)
+- [ ] `Fn+F7` переключает микрофон дважды: выбрать вариант A или B — [02-debian-tuning/input/README.md](02-debian-tuning/input/README.md#второй-симптом-fnf7-переключает-дважды)
 - [ ] Windows в меню GRUB: [02-debian-tuning/windows-grub.md](02-debian-tuning/windows-grub.md)
 - [x] Сбор диагностики: [02-debian-tuning/diagnostics/README.md](02-debian-tuning/diagnostics/README.md)
 - [ ] Дальнейший тюнинг — добавлять сюда новыми пунктами.
@@ -48,6 +51,7 @@
 02-debian-tuning/    шаги из уже установленной Debian
   apt/               быстрые зеркала пакетов
   swap/              swap-файл
+  input/             клавиши и тачскрин (фантомный mute)
   network/           Wi-Fi, USB-тетеринг, офлайн-пакеты
   diagnostics/       сбор логов
 iso/                 образы Debian (вне git)

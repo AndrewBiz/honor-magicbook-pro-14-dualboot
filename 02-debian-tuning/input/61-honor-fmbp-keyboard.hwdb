@@ -1,0 +1,6 @@
+# HONOR MagicBook Pro 14 (FMB-P): the EC sends the extra scancode 0xf8 with Fn
+# hotkey presses. evtest on the internal keyboard shows MSC_SCAN f8 and no
+# EV_KEY, and dmesg logs "atkbd serio0: Unknown key released ... code 0xf8",
+# so atkbd drops it anyway; mapping it to "reserved" just stops the warning.
+evdev:atkbd:dmi:bvn*:bvr*:bd*:svnHONOR*:pn*:*
+ KEYBOARD_KEY_f8=reserved
