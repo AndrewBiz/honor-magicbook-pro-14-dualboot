@@ -5,7 +5,8 @@
 
 **Состояние на 2026-11-19:** Debian 13.7, ядро 6.12.117, KDE Plasma + SDDM, Wi-Fi
 `wlp0s20f3` через NetworkManager, swap-файл 8 ГиБ, фантомный mute микрофона от тачскрина
-отключён; по двойному переключению `Fn+F7` решение не принято.
+отключён, диктовка Handy вставляет текст в Konsole; по двойному переключению `Fn+F7` решение
+не принято.
 
 ## Чеклист
 
@@ -15,6 +16,7 @@
 - [x] Swap-файл и `vm.swappiness` — [swap/README.md](swap/README.md)
 - [x] Фантомный mute микрофона от тачскрина — [input/README.md](input/README.md)
 - [ ] `Fn+F7` переключает микрофон дважды: выбрать вариант A или B — [input/README.md](input/README.md#второй-симптом-fnf7-переключает-дважды)
+- [x] Вставка диктовки Handy в Wayland-приложения — [handy/README.md](handy/README.md)
 - [ ] Windows в меню GRUB — [windows-grub.md](windows-grub.md)
 - [x] Сбор диагностики — [diagnostics/README.md](diagnostics/README.md)
 - [ ] Дальнейший тюнинг — новые пункты добавлять сюда и в корневой `README.md`

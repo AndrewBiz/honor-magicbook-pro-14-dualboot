@@ -5,8 +5,8 @@
 каталоги с документацией и скриптами.
 
 **Состояние на 2026-11-19:** Debian 13.7 установлен и загружается сам. Работают KDE, Wi-Fi,
-swap и тачскрин; фантомный mute микрофона от тачскрина отключён. Осталось добавить Windows
-в меню GRUB, решить по `Fn+F7` и продолжать тюнинг.
+swap, тачскрин и диктовка Handy; фантомный mute микрофона от тачскрина отключён. Осталось
+добавить Windows в меню GRUB, решить по `Fn+F7` и продолжать тюнинг.
 
 ## Часть 1 — подготовка (Windows основная)
 
@@ -28,6 +28,7 @@ swap и тачскрин; фантомный mute микрофона от тач
 - [x] Swap-файл 8 ГиБ и `vm.swappiness=10`: [02-debian-tuning/swap/README.md](02-debian-tuning/swap/README.md)
 - [x] Фантомный mute микрофона от тачскрина: [02-debian-tuning/input/README.md](02-debian-tuning/input/README.md)
 - [ ] `Fn+F7` переключает микрофон дважды: выбрать вариант A или B — [02-debian-tuning/input/README.md](02-debian-tuning/input/README.md#второй-симптом-fnf7-переключает-дважды)
+- [x] Диктовка Handy вставляет текст в Wayland-приложения: [02-debian-tuning/handy/README.md](02-debian-tuning/handy/README.md)
 - [ ] Windows в меню GRUB: [02-debian-tuning/windows-grub.md](02-debian-tuning/windows-grub.md)
 - [x] Сбор диагностики: [02-debian-tuning/diagnostics/README.md](02-debian-tuning/diagnostics/README.md)
 - [ ] Дальнейший тюнинг — добавлять сюда новыми пунктами.
@@ -52,6 +53,7 @@ swap и тачскрин; фантомный mute микрофона от тач
   apt/               быстрые зеркала пакетов
   swap/              swap-файл
   input/             клавиши и тачскрин (фантомный mute)
+  handy/             диктовка Handy: dotool + uinput
   network/           Wi-Fi, USB-тетеринг, офлайн-пакеты
   diagnostics/       сбор логов
 iso/                 образы Debian (вне git)
