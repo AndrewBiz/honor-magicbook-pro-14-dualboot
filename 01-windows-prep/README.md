@@ -52,6 +52,10 @@ lockdown, который включается при Secure Boot.
 - [x] До первого reboot запустить `fix-acpi.sh` из второго терминала установщика.
 - [x] Проверить первый запуск: `dmesg | grep -i GINF` пусто, `nvme0n1` виден.
 
+После фикса в `dmesg` остаётся штатный шум: `AE_NOT_FOUND` для `TPD0`/`TPL1` (ссылки на
+несуществующие тачпады на I2C3–I2C5) и `WARNING` от `i915` про VBT порта A. Это не регрессия —
+разбор в [../02-debian-tuning/diagnostics/README.md](../02-debian-tuning/diagnostics/README.md#известный-безвредный-шум-при-загрузке).
+
 Пошагово, с экранами установщика: [usb/install-cheatsheet.md](usb/install-cheatsheet.md).
 
 ## Как устроен ACPI-фикс
